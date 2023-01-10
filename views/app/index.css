@@ -1,0 +1,209 @@
+::before,
+::after{
+    box-sizing: border-box;
+    /* 1 */
+    border-width: 0;
+    /* 2 */
+    border-style: solid;
+    /* 2 */
+    /* 2 */
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Domine', serif;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image:url(/img/diamond-1186139_960_720.jpg);
+    background-position: center;
+    background-size:cover; 
+    padding: 0 0rem;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+  }
+  #nav-title {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px rgb(97, 97, 139);
+    border-radius: 1rem;
+    font-size: 2rem;
+  }
+  
+#nav-bar{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7rem;
+    padding: 0rem 0rem 2rem 0rem;;
+}
+
+#nav-div {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+
+#nav-icon{
+    color: rgb(241, 241, 241);
+    height: 4rem;
+    width: 3rem;
+  }
+  .nav-div-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+
+#input-items-information{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 40vh;
+    gap: 1rem;
+    overflow: auto;
+}
+
+input{
+    padding: 11px 14px;
+    font-size: x-large;
+    border: none;
+    background-color: transparent ;
+    opacity: 0.8;
+    border-bottom: 2px solid;
+    border-radius: 1rem;
+}
+
+label{
+    font-size: x-large;
+    color: rgb(235, 235, 250);
+    text-align: center;
+    text-shadow: 3px 3px gold;
+}
+
+.input-style{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-style: oblique;
+    color: rgb(27, 36, 112);
+    align-items: center;
+    
+}
+
+
+#div-container-form{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#add-control-btn{
+    display: flex;
+    padding: 0.8rem;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    border-radius: 0.8rem;
+    justify-content: center;
+    gap: 1rem;
+    transform: scale(1);
+    cursor: pointer;
+    background-color: rgb(247, 247, 247);
+}
+
+
+#add-control-btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(245, 237, 129);
+}
+
+
+#table-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    height: 40vh;
+    overflow: auto;
+}
+
+
+.delete-Button{
+    background-color: red;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+#ws-img{
+    height: 3rem;
+}
+#estatus{
+    height: 40px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+  @media (min-width:640px) {
+    #nav-div{
+        flex-direction: row;
+    };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

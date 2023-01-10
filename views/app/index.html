@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+
+    <title>EmpeñoControllerApp</title>
+
+
+</head>
+<body>
+
+    <nav id="nav-bar">
+        <div id="nav-div">
+
+            <div class="nav-div-2">
+                <svg xmlns="http://www.w3.org/2000/svg" id="nav-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+            <p id="nav-title">EmpeñoController</p>
+            </div>
+           
+        <div class="nav-div-2">
+            <a href="/">Home</a>
+            <a href="/" id="logout-btn">Cerrar Sesion</a>
+            </div>
+          
+          </div>
+    </nav>
+
+
+
+
+
+
+        <form id="form">
+        <div id="div-container-form">
+    
+    
+    <div>
+        <label for="Tipo">Tipo</label>
+        <input type="text" name="Tipo" id="Type-of-item" class="input-style" placeholder="Oro, Plata, Collares, Gargantillas, Cadenas, Anillos, Pulseras, Brazaletes, Esclavas, Dijes" required>
+    </div>
+
+    <div>
+        <label for="Modelo">Modelo</label>
+        <input type="text" name="Modelo" id="Model" class="input-style" placeholder="Modelos, Quilates, Gramaje" required>
+    </div>
+
+    <div>
+        <label for="Año">Año</label>
+        <input type="text" name="Año" id="Year-of-item" class="input-style" placeholder="Año de compra" required>
+    </div>
+
+    <div>
+        <label for="Costo">Costo</label>
+        <input type="text" name="Costo" id="Cost-of-item" class="input-style" placeholder="Avaluo alcanzado" required>
+    </div>
+
+    <div>
+        <label for="Fecha">Fecha</label>
+        <input type="date" name="Fecha" id="Date-of-item-income" class="input-style" placeholder="Fecha de ingreso" required>
+    </div>
+
+    <div>
+        <label for="Nombbre del empeñador">Nombre del empeñador</label>
+        <input type="text" name="Nombre del empeñador" id="name-of-owner" class="input-style" placeholder="Nombre" required>
+    </div>
+
+    <div>
+        <label for="Telefono">Telefono</label>
+        <input type="text" name="Telefono" id="number-of-owner" class="input-style" placeholder="Numero de contacto" required> 
+    </div>
+
+    <div>
+        <button id="add-control-btn" class="input-style">Agregar Item</button>
+    </div>
+        </div>
+        
+    </form>
+   
+
+<section id="table-control">
+    <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-10 mx-auto">
+            <div class="card rounded shadow border-0">
+              <div class="card-body p-5 bg-white rounded">
+                <div class="table-responsive">
+                  <table id="EmpeñoControllerApp" style="width:100%" class="table table-striped table-bordered">
+                    <thead>
+                        <h1>EmpeñoController </h1>
+                      <tr>
+                        <th class="head-th">Tipo</th>
+                        <th class="head-th">Modelo</th>
+                        <th class="head-th">Año</th>
+                        <th class="head-th">Costo</th>
+                        <th class="head-th">Fecha de entrada</th>
+                        <th class="head-th">Nombre del empeñador</th>
+                        <th class="head-th">Numero de telefono</th>
+                        <th class="head-th">Estatus</th>
+                        <th class="head-th">Borrar Item</th>
+                        <th class="head-th">Recibo</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-body">
+                     
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="whatsapp-btn-chat">
+  <img id="ws-img" src="/img/whatsapp-43-189795.webp" alt="">
+    <a aria-label="Chat on WhatsApp" href="https://wa.me/+584241801576" >Chat en WhatsApp.</a>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+    <script src="../app/index.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
