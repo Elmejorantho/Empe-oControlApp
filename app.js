@@ -7,7 +7,7 @@ mongoose.set("strictQuery", false);
 const UsersRouter = require('./controllers/users');
 const loginRouter = require('./controllers/login')
 const cookieParser = require('cookie-parser');
-const empeñoRouter = require('./controllers/empeñoItem')
+const empeñoRouter = require('./controllers/empeñoItem');
 const cors = require('cors');
 const path = require('path');
 const authExtractor = require('./middleware/auth');
@@ -36,10 +36,10 @@ app.use('/api/logout', logoutRouter);
 app.use('/api/empeñoItem', authExtractor , empeñoRouter);
 
 //Frontend routes
-app.use('/', express.static(path.join(__dirname, 'views', 'home')));
-app.use('/singup', express.static(path.join(__dirname, 'views', 'singup')));
-app.use('/login', express.static(path.join(__dirname, 'views', 'login')));
-app.use('/app/:id', express.static(path.join(__dirname, 'views', 'app')));
-app.use('/img', express.static(path.join(__dirname, 'img')));
+app.use('/', express.static(path.resolve(__dirname, 'views', 'home')));
+app.use('/singup', express.static(path.resolve(__dirname, 'views', 'singup')));
+app.use('/login', express.static(path.resolve(__dirname, 'views', 'login')));
+app.use('/app/:id', express.static(path.resolve(__dirname, 'views', 'app')));
+app.use('/img', express.static(path.resolve(__dirname, 'img')));
 
 module.exports = app;
