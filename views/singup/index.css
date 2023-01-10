@@ -124,7 +124,6 @@ input{
     display: flex;
     padding: 0.8rem;
     align-items: center;
-    width: 50%;
     gap: 1rem;
     border-radius: 0.8rem;
     justify-content: center;
@@ -135,7 +134,7 @@ input{
     }
 
     #register-btn:hover{
-        transform: scale(1.1);
+        transform: scale(1.5);
         background-color: rgb(166, 84, 243);
     }
 
