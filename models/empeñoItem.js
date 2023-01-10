@@ -1,6 +1,7 @@
 const mongoose = require ('mongoose');
 
 
+
 const itemEmpeñoSchema = new mongoose.Schema({
 Tipo: String,
 Modelo: String,

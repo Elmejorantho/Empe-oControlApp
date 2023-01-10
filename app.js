@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+mongoose.set("strictQuery", false);
 const UsersRouter = require('./controllers/users');
 const loginRouter = require('./controllers/login')
 const cookieParser = require('cookie-parser');
